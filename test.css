@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    font-size: 18px;
+    background-color: rgb(156, 240, 229);
+  }
+  .options-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  header {
+    /* display: flex; */
+    width: 100%;
+    background-color: rgb(158, 177, 179);
+    position: fixed;
+    top: 0px;
+    right: 0;
+  
+  }
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+  nav li {
+    border-bottom: 1px solid black;
+    padding: 0.5rem;
+  }
+  a {
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+  }
+  nav li:hover {
+    background-color: rgb(46, 129, 253);
+  }
+  main {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    padding-top: 13rem;
+    /* padding-top: 14rem; */
+  }
+  .text-format{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  img {
+    border-radius: 50%;
+    max-width: 170px;
+    justify-content: center;
+    /* margin: 0 auto; */
+  }
+  .hire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-format h1 {
+    margin: 1rem;
+  }
+  .format {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .vectors {
+    margin: 2rem;
+    display: flex;
+  }
+  .job {
+    text-align: center;
+  }
+  .goals
+   {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  job {
+    padding: 1rem;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skills h3 {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: rgb(68, 173, 155);
+    border-radius: 10px;
+    margin-right: 1rem;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+  }
+  .education,
+  .work,
+  .hobbies {
+    margin-bottom: 2rem;
+  }
+  .education p,
+  .work p,
+  .hobbies p {
+    padding: 0.5rem;
+  }
+  button.hire {
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(196, 231, 245);
+  }
+  .point li{
+  text-align: start;
+  padding: 1rem;
+  }
+  ul.point{
+  padding: 2rem;
+  text-align: start;
+  }
+  button.hire:hover {
+    background-color: #1085a8;
+  }
+  button.project a:hover {
+    color: white;
+  }
+  h3 {
+    margin-bottom: 0.2rem;
+  }
+  
+  .project-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  
+  }
+  
+  .login-wrapper,
+  .register-wrapper,
+  .contact-wrapper {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+     margin-top: 10rem;
+  }
+  .login-main,
+  .register-main,
+  .contact-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+     background-color: rgb(79, 178, 243);
+    min-width: 350px;
+  
+  }
+  .register-main,
+  .contact-main{
+    margin-top: 10rem;
+  margin-bottom: 2rem;
+  }
+  
+  .contact-main input,
+  textarea,
+  .login-main input {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .contact-main input:focus,
+  .contact-main select:focus,
+  .contact-main textarea :focus,
+  .login-main input:focus,
+  .login-submit:focus,
+  .register-main input:focus,
+  .register-main select:focus {
+    border: 1px solid black;
+    border-radius: 10px;
+  
+  }
+  .contact-main select {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem 0 1rem 0;
+  }
+  .register-main div {
+    margin-bottom: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .register-main input,
+  .register-main select {
+    width: 49%;
+    padding: 0.6rem;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+  }
+  
+  .register-main label {
+    margin-right: 0.5rem;
+  }
+  .register-submit {
+    padding: 0.6rem 0 0.6rem 0;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(7, 37, 204);
+  }
+  .login-submit {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0.6rem 0 0.6rem 0;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 1rem;
+    background-color: rgb(91, 184, 247);
+  }
+  .register-submit:hover,
+  .register-submit:focus,
+  .login-submit:hover,
+  .contact-submit:hover {
+    color: rgb(8, 230, 238);
+    border: 0;
+  }
+  .prio {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+  
+  ::placeholder {
+    color: black;
+  }
+  .contact-submit {
+    border: 0;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0.8rem 0 0.8rem 0;
+    background-color: rgb(103, 131, 141);
+  }
+  @media (min-width: 60rem) {
+    .about-wrapper {
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+  
+      height: 100vh;
+    }
+    header {
+      justify-content: flex-end;
+      width: 100%;
+      background-color: rgb(115, 185, 187);
+      position: static;
+      padding: 1rem;
+    }
+    nav a {
+      padding-bottom: 1.7rem;
+    }
+    nav li {
+      border: 0;
+    }
+    nav ul {
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 0.4rem;
+    }
+    nav a:hover {
+      border-bottom: 3px solid black;
+    }
+  
+    main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      padding: 1rem;
+      align-items: center;
+      /* height: 90vh; */
+    }
+  
+    .hire {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .format {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .vectors i {
+      margin: 0 1rem 0 1rem;
+    }
+    .new {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: start;
+    }
+  
+    .new h3 {
+      padding: 1rem;
+    }
+    .goals {
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+    }
+    aside {
+      margin-bottom: 3rem;
+    }
+    .project-wrapper {
+      height: 90vh;
+      padding-top: 0;
+    }
+    .contact-main,
+    .register-main,
+    .login-main {
+      min-width: 600px;
+      margin-bottom: 3rem;
+    }
+    .register-main{
+    margin-top: 2px;
+    }
+    .contact-main{
+      margin-top: 4rem;
+    }
+    .register-main input,
+    .register-main select {
+      width: 70%;
+    }
+    .register-submit {
+      margin: 0 auto;
+      width: 50%;
+    }
+    .login-wrapper,.contact-wrapper {
+      padding-top: 0rem;
+      /* height: 100vh; */
+      /* height: 100vh;
+      flex-direction: column; */
+    }
+    .register-wrapper{
+        padding-top: 0rem;
+        /* padding-bottom: 2rem; */
+       height: 102vh;
+    }
+   
+    .contact-wrapper h4,
+    .register-wrapper h4 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
